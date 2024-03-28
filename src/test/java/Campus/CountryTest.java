@@ -16,7 +16,7 @@ import static io.restassured.RestAssured.*;
 public class CountryTest {
     Cookies cookies;
     Country country;
-    String countryId;
+//    String countryId;
     Response response;
 
     @BeforeClass
@@ -131,7 +131,7 @@ public class CountryTest {
 
                 .then()
                 .log().body()
-                .statusCode(200);
+                .statusCode(201);
 
     }
 
